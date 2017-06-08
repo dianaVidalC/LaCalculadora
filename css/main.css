@@ -27,7 +27,7 @@ button{
     width: 19%;
     height: 21%;
     margin:2%;
-    color: #000;
+    color: white;
     font-weight: 800;
     font-size: 15px;
 }
@@ -59,7 +59,7 @@ input:focus{
     height: 200px;
     padding: 9% 7% 40% 7%;
     border-bottom-left-radius: 44px;
-    border-top-right-radius: 44px;
+    border-bottom-right-radius: 44px;
     text-align: center;
 }
 

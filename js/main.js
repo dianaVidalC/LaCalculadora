@@ -3,13 +3,13 @@
  */
 'use strict';
 
-$(_=>{
-    const screenVal= $("input:text");
+$(function(){
+    var screenVal= $("input:text");
 
-    $("input:button").on("click",_=>{
+    $("input:button").on("click",function(){
 
-        const eachNumber=$(this).val();
-        let currentScreen = screenVal.val();
+        var eachNumber=$(this).val();
+        var currentScreen = screenVal.val();
         currentScreen+= eachNumber;
         screenVal.val(currentScreen);
         if($(this).val()==="C"){
@@ -17,7 +17,7 @@ $(_=>{
         }
     });
 
-    $("button").click((event)=>{
+    $("button").click(function(event){
         event.preventDefault();
         screenVal.val(eval(screenVal.val()));
     });
